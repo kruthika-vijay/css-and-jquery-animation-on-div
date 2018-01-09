@@ -3,6 +3,7 @@
     <head>
     <title>Handy css and jquery tricks</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script>
         
@@ -80,23 +81,52 @@
                 padding: 5px;
                 list-style-type: none;
             }
+            .statistics {
+                display: flex;
+                margin-bottom: 25px;
+                padding: 0;
+            }
+            .statistic {
+              padding: 20px 15px;
+              margin-bottom: 0;
+              display: table;
+              vertical-align: middle;
+              height: 250px;
+            }
+            .d-t-cell{
+              display: table-cell !important;
+              vertical-align: middle;
+              text-align: center;
+            }
+            .statistic .icon {
 
-            .container .text{
- 	background:url("img/Responsive-Website-Design.gif") repeat;
-  background-position:bottom;
- 	-webkit-background-clip: text;
-    color: transparent;
-	font-size:400px;
-    font-family:Helvetica;
-	font-weight:bold;
-  margin:0 auto;
-}
+              text-align: center;
 
-.container .gifText {
-  margin:0 auto;
-    width:100%;
-}
+              color: #fff;
+              border-radius: 50%;
+              margin-right: 15px;
 
+            }
+            .bg-red {
+              background: #ff7676 !important;
+              color: #fff;
+            }
+            .bg-green {
+              background: #54e69d !important;
+              color: #fff;
+            }
+            .bg-orange {
+              background: #ffc36d !important;
+              color: #fff;
+            }
+            .bg-white{
+                background: #fff;
+                color: #000;
+            }
+            .has-shadow {
+              -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1), -1px 0 2px rgba(0, 0, 0, 0.05);
+              box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1), -1px 0 2px rgba(0, 0, 0, 0.05);
+            }
         </style>
     </head>
     <body>
@@ -106,12 +136,12 @@
                 <h2>hello there!<br/><font color="#33ACD">welcome to my site</font></h2>
                 </div>
             <div style="padding-top:100px;color: #fff;">
-  <h2>Overlay effect</h2>
-  <p>lorem ipsum</p>
-  
-</div>
+                  <h2>Overlay effect</h2>
+                  <p>lorem ipsum</p>
+
             </div>
-</div>
+            </div>
+        </div>
     <div class="container">
 
 
@@ -134,12 +164,57 @@
   
         
         </div>
-    <div class="container">
-
-        <div class="gifText">
-<div class="text"> WORLD </div>
-</div>
-    </div>
+        <section class="dashboard-header" style="padding:50px 0; background: lightcyan;">
+            <div class="container-fluid">
+                <div class="text-center">
+                <h2>Title goes here</h2>
+                </div>
+              <div class="row">
+                <!-- Statistics -->
+                <div class="statistics col-lg-12 col-sm-12 col-md-12 col-xs-12 bg-white  has-shadow">
+                  <div class="statistic col-lg-6 col-sm-6 col-md-6 col-xs-12 bg-red">
+                    <div class="d-t-cell">
+                      <div class="icon"><i class="fa fa-tasks fa-3x"></i></div>
+                    </div>
+                   
+                  </div>
+                  <div class="statistic col-lg-6 col-sm-6 col-md-6 col-xs-12 bg-white">
+                    <div class="d-t-cell">
+                      <div class="text"><a href="#"><strong>Lorem Ipsum</strong></a></div>
+                    </div>
+                  </div>
+                </div>
+                  <div class="statistics col-lg-12 col-sm-12 col-md-12 col-xs-12 bg-white  has-shadow">
+                      <div class="statistic col-lg-6 col-sm-6 col-md-6 col-xs-12 bg-white">
+                        <div class="d-t-cell">
+                            <div class="text"><a href="#"><strong>Lorem Ipsum</strong></a></div>
+                          
+                        </div>
+                       
+                      </div>
+                      <div class="statistic col-lg-6 col-sm-6 col-md-6 col-xs-12 bg-green">
+                        <div class="d-t-cell">
+                            <div class="icon"><i class="fa fa-calendar-o fa-3x"></i></div>
+                        </div>
+                      </div>
+                      </div>
+                      <div class="statistics col-lg-12 col-sm-12 col-md-12 col-xs-12 bg-white  has-shadow">
+                          <div class="statistic col-lg-6 col-sm-6 col-md-6 col-xs-12 bg-orange">
+                            <div class="d-t-cell">
+                              <div class="icon"><i class="fa fa-line-chart fa-3x"></i></div>
+                            </div>
+                           
+                          </div>
+                          <div class="statistic col-lg-6 col-sm-6 col-md-6 col-xs-12 bg-white">
+                            <div class="d-t-cell">
+                                <div class="text"><a href=""><strong>Lorem Ipsum</strong></a></div>
+                            </div>
+                          </div>
+                        </div>
+                      
+                </div>
+            </div>
+          </section>
     
     </body>
 </html>
